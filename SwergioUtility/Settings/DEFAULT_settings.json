@@ -1,0 +1,81 @@
+{
+    "MessageParts": {
+        "ChatType" : {
+            "MessagePosition":0,
+            "MessageSize":1,
+            "VocabSize":4,
+            "ActionSize":3,
+            "EmbeddingSize":4,
+            "Enums": [
+                {"Name":"AGENT", "Value":0, "IsActionable":true},
+                {"Name": "WORKER", "Value":1, "IsActionable":true},
+                {"Name": "KNOWLEDGEBASE", "Value":2, "IsActionable":true},
+                {"Name": "REVIEW", "Value":3, "IsActionable":false}
+            ]
+        },
+        "ChatNumber" : {
+            "MessagePosition":1,
+            "MessageSize":1,
+            "VocabSize":2,
+            "ActionSize":2,
+            "EmbeddingSize":2,
+            "Enums": [
+                {"Name":"CHATNR0", "Value":0, "IsActionable":true},
+                {"Name": "CHATNR1", "Value":1, "IsActionable":true}
+            ]
+        },
+        "MessageType" : {
+            "MessagePosition":2,
+            "MessageSize":1,
+            "VocabSize":3,
+            "ActionSize":2,
+            "EmbeddingSize":3,
+            "Enums": [
+                {"Name":"QUESTION", "Value":0, "IsActionable":true},
+                {"Name": "ANSWER", "Value":1, "IsActionable":true},
+                {"Name": "FEEDBACK", "Value":2, "IsActionable":false}
+            ]
+        },
+        "MessageText" : {
+            "MessagePosition":3,
+            "MessageSize":25,
+            "VocabSize":100,
+            "ActionSize":100,
+            "EmbeddingSize":30,
+            "Enums": [
+                {"Name":"NIL", "Value":0, "IsActionable":true},
+                {"Name": "STARTMESSAGE", "Value":1, "IsActionable":true},
+                {"Name": "ENDMESSAGE", "Value":2, "IsActionable":true}
+            ]
+        },
+        "ActionFlag" : {
+            "MessagePosition":4,
+            "MessageSize":1,
+            "VocabSize":2,
+            "ActionSize":1,
+            "EmbeddingSize":2,
+            "Enums": [
+                {"Name":"DONTACT", "Value":0, "IsActionable":true},
+                {"Name": "ACT", "Value":1, "IsActionable":true}
+            ]
+        },
+        "FeedbackReward" : {
+            "MessagePosition":-1,
+            "MessageSize":201,
+            "VocabSize":201,
+            "ActionSize":201,
+            "EmbeddingSize":201,
+            "Enums": [
+                {"Name":"LOWERBOUND", "Value":-100, "IsActionable":true},
+                {"Name": "UPPERBOUND", "Value":100, "IsActionable":true}
+            ]
+        }
+    },
+    "CommunicationEnviroment": {
+        "Reviewer":{
+            "FailRewardMax" : -50,
+            "FailRewardMin" : -100,
+            "UsedNamespace" : "InternReview"
+        }
+    }
+}
