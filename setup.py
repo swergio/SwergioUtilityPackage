@@ -9,7 +9,7 @@ setup(name='SwergioUtility',
       license='MIT',
       packages=find_packages(),
       package_data={
-          'Settings': ['DEFAULT_settings.json'],
+          'SwergioUtility/Settings': ['DEFAULT_settings.json'],
       },
       install_requires=[
           'socketIO-client',
