@@ -1,5 +1,5 @@
 from setuptools import setup
-
+from setuptools import find_packages
 setup(name='SwergioUtility',
       version='0.1',
       description='Description for package',
@@ -7,7 +7,7 @@ setup(name='SwergioUtility',
       author='Ishmagurca',
       #author_email='me@example.com',
       license='MIT',
-      packages=['SwergioUtility'],
+      packages=find_packages(),
       install_requires=[
           'socketIO-client',
       ],
