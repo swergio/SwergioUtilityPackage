@@ -8,6 +8,9 @@ setup(name='SwergioUtility',
       #author_email='me@example.com',
       license='MIT',
       packages=find_packages(),
+      package_data={
+          'Settings': ['DEFAULT_settings.json'],
+      },
       install_requires=[
           'socketIO-client',
       ],
